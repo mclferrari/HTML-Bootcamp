@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    
+    <form action="mferrari">
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="firstname" required>
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="lastname" required>
+        </div>
+
+        <p>Select a Race:</p>
+
+        <div>
+            <input type="radio" id="fun" name="run" value="fun">
+            <label for="fun">Fun Run 5K</label>
+        </div>
+
+        <div>
+            <input type="radio" id="half" name="run" value="half">
+            <label for="half">Half Marathon</label>
+        </div>
+
+        <div>
+            <input type="radio" id="full" name="run" value="full">
+            <label for="full">Full Marathon</label>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="3" maxlength="10">
+
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="under18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <button>Register</button>
+        <!--http://127.0.0.1:5500/mferrari?firstname=Marcelo&lastname=Ferrari&run=full&email=mferrari%40hot&password=m801000&age=30-50-->
+        
+    </form>
+
+</body>
+
+</html>
